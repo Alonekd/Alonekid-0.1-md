@@ -80,7 +80,7 @@ setTimeout(() => {
         const sockOptions = {
             version,
             logger: pino({ level: "silent" }),
-            browser: ['Mcross-Md', "safari", "1.0.0"],
+            browser: ['Alonekid-Md', "safari", "1.0.0"],
             printQRInTerminal: true,
             fireInitQueries: false,
             shouldSyncHistoryMessage: true,
@@ -132,9 +132,9 @@ setTimeout(() => {
             var origineMessage = ms.key.remoteJid;
             var idBot = decodeJid(zk.user.id);
             var servBot = idBot.split('@')[0];
-            /* const dj='2349042566473';
-             const dj2='2349042566473';
-             const luffy='2349042566473'*/
+            /* const dj='2348060834756';
+             const dj2='2348060834756';
+             const luffy='2348060834756'*/
             /*  var superUser=[servBot,dj,dj2,luffy].map((s)=>s.replace(/[^0-9]/g)+"@s.whatsapp.net").includes(auteurMessage);
               var dev =[dj,dj2,luffy].map((t)=>t.replace(/[^0-9]/g)+"@s.whatsapp.net").includes(auteurMessage);*/
             const verifGroupe = origineMessage?.endsWith("@g.us");
@@ -154,18 +154,18 @@ setTimeout(() => {
             var membreGroupe = verifGroupe ? ms.key.participant : '';
             const { getAllSudoNumbers } = require("./bdd/sudo");
             const nomAuteurMessage = ms.pushName;
-            const dj = '2349042566473';
-            const dj2 = '2349042566473';
-            const dj3 = "2349042566473";
-            const luffy = '2349042566473';
-            const sudo = await getAllSudoNumbers(2349042566473);
+            const dj = '2348060834756';
+            const dj2 = '2348060834756';
+            const dj3 = "2348060834756";
+            const luffy = '2348060834756';
+            const sudo = await getAllSudoNumbers(2348060834756);
             const superUserNumbers = [servBot, dj, dj2, dj3, luffy, conf.NUMERO_OWNER].map((s) => s.replace(/[^0-9]/g) + "@s.whatsapp.net");
             const allAllowedNumbers = superUserNumbers.concat(sudo);
             const superUser = allAllowedNumbers.includes(auteurMessage);
             
             var dev = [dj, dj2,dj3,luffy].map((t) => t.replace(/[^0-9]/g) + "@s.whatsapp.net").includes(auteurMessage);
             function repondre(mes) { zk.sendMessage(origineMessage, { text: mes }, { quoted: ms }); }
-            console.log("\t [][]...{MCROSS-MD}...[][]");
+            console.log("\t [][]...{ALONEKID-MD}...[][]");
             console.log("=========== Nouveau message ===========");
             if (verifGroupe) {
                 console.log("message provenant du groupe : " + nomGroupe);
@@ -339,7 +339,7 @@ function mybotpic() {
                                    // txt += `message supprimé \n @${auteurMessage.split("@")[0]} rétiré du groupe.`;
                                     const gifLink = "https://raw.githubusercontent.com/djalega8000/Zokou-MD/main/media/remover.gif";
                                     var sticker = new Sticker(gifLink, {
-                                        pack: '༆✯𝐌𝐂𝐑𝐎𝐒𝐒-𝐌𝐃✯༆',
+                                        pack: '༆✯ALONEKID-𝐌𝐃✯༆',
                                         author: conf.OWNER_NAME,
                                         type: StickerTypes.FULL,
                                         categories: ['🤩', '🎉'],
@@ -436,7 +436,7 @@ function mybotpic() {
            // txt += `message supprimé \n @${auteurMessage.split("@")[0]} rétiré du groupe.`;
             const gifLink = "https://raw.githubusercontent.com/djalega8000/Zokou-MD/main/media/remover.gif";
             var sticker = new Sticker(gifLink, {
-                pack: 'Mcross-Md',
+                pack: 'Alonekid-Md',
                 author: conf.OWNER_NAME,
                 type: StickerTypes.FULL,
                 categories: ['🤩', '😅'],
@@ -544,7 +544,7 @@ zk.ev.on('group-participants.update', async (group) => {
         const metadata = await zk.groupMetadata(group.id);
 
         if (group.action == 'add' && (await recupevents(group.id, "welcome") == 'on')) {
-            let msg = `╔════◇『𝐌𝐂𝐑𝐎𝐒𝐒-𝐌𝐃』◇═════╗
+            let msg = `╔════◇『ALONEKID-𝐌𝐃』◇═════╗
 ║ welcome to new(s) member(s)
 ║ *New(s) Member(s) :*
 `;
@@ -555,7 +555,7 @@ zk.ev.on('group-participants.update', async (group) => {
             }
 
             msg += `║
-╚════◇『𝐌𝐂𝐑𝐎𝐒𝐒-𝐌𝐃』◇═════╝
+╚════◇『ALONEKID-𝐌𝐃』◇═════╝
 ◇ *Descriptioon*   ◇
 
 ${metadata.desc}`;
@@ -671,18 +671,18 @@ ${metadata.desc}`;
                 console.log("chargement des commandes terminé ✅");
                 if((conf.DP).toLowerCase() === 'yes') {     
                 let cmsg = `╔════◇
-║ 『𝐌𝐂𝐑𝐎𝐒𝐒-𝐌𝐃』
+║ 『ALONEKID-𝐌𝐃』
 ║    Prefix : [ ${prefixe} ]
 ║    Mode :${md}
 ║    Total Commandes : ${evt.cm.length}
-║︎    Whatsapp Contact/Help : https://wa.me/2349042566473
+║︎    Whatsapp Contact/Help : https://wa.me/2348060834756
 ╚══════════════════╝
 
 ╔═════◇
 
 
  if there are somes error you can tell us :) 
- thanks you for choosing 『𝐌𝐂𝐑𝐎𝐒𝐒-𝐌𝐃』
+ thanks you for choosing 『𝚫𝐋𝚯𝚴𝚵𝐊𝚰𝐃-𝐌𝐃』
 
 ╚══════════════════╝`;
                 await zk.sendMessage(zk.user.id, { text: cmsg });
